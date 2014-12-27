@@ -18,6 +18,7 @@
   }
   .navbar-collapse.collapse {
     display: none!important;
+    overflow: scroll !important;
   }
   .navbar-nav {
     float: none!important;
