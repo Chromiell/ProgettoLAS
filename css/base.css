@@ -1,3 +1,4 @@
+/* Fai collasse la navbar quando non ci sta più in una riga */
 @media (max-width: 1200px) {
   .navbar-header {
     float: none;
@@ -36,6 +37,7 @@
   }
 }
 
+/* Riduzione margini e padding navbar per farci stare tutto in una riga */
 .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top, .navbar-form {
   padding:0;
   margin-left: 0;
@@ -43,6 +45,7 @@
   margin-bottom:0;
 }
 
+/* Colore link Ricerca Avanzata navbar */
 .advsearch-navbar, .advsearch-navbar:visited {
   color: rgb(186, 186, 186);
 }
