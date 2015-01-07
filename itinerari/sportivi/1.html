@@ -224,12 +224,6 @@
         </div>
         <div class="col-md-2">
           <strong>Tag associati:</strong>
-          <br>
-          <span>Tag 1</span>
-          <br>
-          <span>Tag 2</span>
-          <br>
-          <span>Tag 3</span>
 		  <input id="tag-list" data-role="tagsinput">
         </div>
       </div>
@@ -319,7 +313,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../../js/bootstrap.min.js"></script>
 
-	<script src="../../js/bootstrap-tagsinput.min.js"></script>
+	<script src="../../js/bootstrap-tagsinput.min.js">
+		$("tag-list").tagsinput('add', 'some tag');
+	</script>
 	
   </body>
 
