@@ -315,9 +315,12 @@
 
 	<script src="../../js/bootstrap-tagsinput.min.js"></script>
 	<script>
-		$('tag-list').tagsinput('add', 'tag1');
-		$('tag-list').tagsinput('add', 'tag2');
-		$('tag-list').tagsinput('add', 'tag3');
+		var elt = $('tag-list');
+		elt.tagsinput('add', { "value": 1 , "text": "tag1"});
+		elt.tagsinput('add', { "value": 2 , "text": "tag2"});
+		elt.tagsinput('add', { "value": 3 , "text": "tag3"});
+		elt.tagsinput('add', { "value": 4 , "text": "tag4"});
+		elt.tagsinput('add', { "value": 5 , "text": "tag4"});
 	</script>
 	
   </body>
