@@ -20,8 +20,12 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+	<link href="css/tx3-tag-cloud.css" rel="stylesheet" type="text/css">
+	
     <link href="css/base.css" rel="stylesheet">
-
+	
+	
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -299,26 +303,23 @@
         <div class="row text-center">
 		
           <img src="http://placehold.it/500x300&text=Tag Cloud" alt="Tag cloud itinerari" />
-
-			<div id="myCanvasContainer">
-			  <canvas width="500" height="300" id="myCanvas">
-				<p>Anything in here will be replaced on browsers that support the canvas element</p>
-			  </canvas>
-			</div>
-			<div id="tags" class="col-lg-12">
-			  <ul>
-				<li><a href="#">Vacanza</a></li>
-				<li><a href="#">Sport</a></li>
-				<li><a href="#">Itinerari</a></li>
-				<li><a href="#">Mare</a></li>
-				<li><a href="#">Montagna</a></li>
-				<li><a href="#">Svago</a></li>
-				<li><a href="#">Sci</a></li>
-				<li><a href="#">Tennis</a></li>
-				<li><a href="#">Museo</a></li>
-				<li><a href="#">Storia</a></li>				
-			  </ul>
-			</div>
+    <ul id="tagcloud">
+      <li data-weight="50"><a href="#">Culturale</a></li>
+      <li data-weight="24"><a href="#">Enogastronomico</a></li>
+      <li data-weight="28"><a href="#">Mare</a></li>
+      <li data-weight="32"><a href="#">Montagna</a></li>
+      <li data-weight="38"><a href="#">Musei</a></li>
+      <li data-weight="60"><a href="#">Festival</a></li>
+      <li data-weight="38"><a href="#">Evento</a></li>
+      <li data-weight="27"><a href="#">Concerto</a></li>
+      <li data-weight="47"><a href="#">Luoghi</a></li>
+      <li data-weight="30"><a href="#">Sci</a> </li>
+      <li data-weight="37"><a href="#">Nautica</a></li>
+      <li data-weight="60"><a href="#">Expo</a></li>
+      <li data-weight="40"><a href="#">Orari</a></li>
+      <li data-weight="38"><a href="#">Mostre</a></li>
+      <li data-weight="47"><a href="#">Mercatini</a></li>
+    </ul>
 
 		  
         </div>
@@ -423,20 +424,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        if(!$('#myCanvas').tagcanvas({
-          textColour: '#ff0000',
-          outlineColour: '#ff00ff',
-          reverse: true,
-          depth: 0.8,
-          maxSpeed: 0.05
-        },'tags')) {
-          // something went wrong, hide the canvas container
-          // $('#myCanvasContainer').hide();
-        }
-      });
+	
+	<script type="text/javascript" src="js/jquery.tx3-tag-cloud.js" ></script>
+    <script>
+    // default multiplier is "1"
+    $(document).ready(function(){
+        $("#tagcloud").tx3TagCloud({
+            multiplier: 5
+        });
+    });
+
     </script>
   </body>
 
