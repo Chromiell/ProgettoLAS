@@ -20,6 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+	<link href="css/tx3-tag-cloud.css" rel="stylesheet" type="text/css">
+	
     <link href="css/base.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -335,7 +337,24 @@
           <h2 class="page-header">Tag cloud</h2>
         </div>
         <div class="row text-center">
-          <img src="http://placehold.it/500x300&text=Tag Cloud" alt="Tag cloud" />
+          <!-- <img src="http://placehold.it/500x300&text=Tag Cloud" alt="Tag cloud" /> -->
+     <ul id="tagcloud">
+      <li data-weight="50"><a href="#">Culturale</a></li>
+      <li data-weight="24"><a href="#">Enogastronomico</a></li>
+      <li data-weight="28"><a href="#">Mare</a></li>
+      <li data-weight="32"><a href="#">Montagna</a></li>
+      <li data-weight="38"><a href="#">Musei</a></li>
+      <li data-weight="60"><a href="#">Festival</a></li>
+      <li data-weight="38"><a href="#">Evento</a></li>
+      <li data-weight="27"><a href="#">Concerto</a></li>
+      <li data-weight="47"><a href="#">Luoghi</a></li>
+      <li data-weight="30"><a href="#">Sci</a> </li>
+      <li data-weight="37"><a href="#">Nautica</a></li>
+      <li data-weight="60"><a href="#">Expo</a></li>
+      <li data-weight="40"><a href="#">Orari</a></li>
+      <li data-weight="38"><a href="#">Mostre</a></li>
+      <li data-weight="47"><a href="#">Mercatini</a></li>
+    </ul>
         </div>
       </div>
       <!-- /.row -->
@@ -405,7 +424,14 @@
         interval: 5000 //changes the speed
       })
     </script>
-
+	<script type="text/javascript" src="js/jquery.tx3-tag-cloud.js" ></script>
+    <script>
+    // default multiplier is "1"
+    $(document).ready(function(){
+        $("#tagcloud").tx3TagCloud({
+            multiplier: 5
+        });
+    });
   </body>
 
 </html>
