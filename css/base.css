@@ -1,8 +1,13 @@
-/* Fai collasse la navbar quando non ci sta più in una riga */
+/* Fai collapse la navbar quando non ci sta più in una riga */
 @media (max-width: 1200px) {
   .navbar-header {
     float: none;
   }
+ 
+  .navbar-brand  {
+   padding-top: 5px;
+  }
+  
   .navbar-left,.navbar-right {
     float: none !important;
   }
@@ -43,6 +48,10 @@
   margin-left: 0;
   margin-right: 0;
   margin-bottom:0;
+}
+
+ul.nav.navbar-nav.navbar-center {
+margin-top: 12px;
 }
 
 /* Colore link Ricerca Avanzata navbar */
