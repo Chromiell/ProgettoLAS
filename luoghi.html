@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="it">
+
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Progetto per il corso di Web Design sviluppato dal team Sootsprite, rappresentate un sito turistico">
+    <meta name="description" content="Luoghi visitabili nella regione, organizzati per categorie">
     <meta name="author" content="Sootsprite">
-    <title>Home page</title>
+
+    <title>Luoghi</title>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <link href="css/tx3-tag-cloud.css" rel="stylesheet" type="text/css">
+
     <link href="css/base.css" rel="stylesheet">
+
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+
   </head>
+
   <body>
+
     <!-- Navigation bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -182,157 +196,102 @@
       <!-- /.container -->
     </nav>
     <!-- Fine navigation bar -->
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="fill" style="background-image:url('images/slide1.jpg');"></div>
-          <div class="carousel-caption">
-            <h2>Relax e mare ...</h2>
-          </div>
-        </div>
-        <div class="item">
-          <div class="fill" style="background-image:url('images/slide2.jpg');"></div>
-          <div class="carousel-caption">
-            <h2>La tua vacanza nei nostri laghi ...</h2>
-          </div>
-        </div>
-        <div class="item">
-          <div class="fill" style="background-image:url('images/slide3.jpg');"></div>
-          <div class="carousel-caption">
-            <h2>Cerchi emozioni forti? Tutte le attività sportive a portata di mano ...</h2>
-          </div>
-        </div>
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-      </a>
-    </header>
     <!-- Page Content -->
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-centered text-center">
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Itinerari più frequentati</button>
-            <button type="button" class="btn btn-default">Luoghi più frequentati</button>
-            <button type="button" class="btn btn-default">Cosa fare</button>
-            <button type="button" class="btn btn-default">Opportunità</button>
-          </div>
-        </div>
-      </div>
-      <!-- Marketing Icons Section -->
+
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="page-header">Sezioni</h2>
+          <h1 class="page-header">Luoghi
+            <small>Sezioni</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li class="active">Luoghi</li>
+          </ol>
         </div>
+      </div>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <span><i class="fa fa-fw fa-newspaper-o"></i> News</span>
+              <span><i class="fa fa-fw"></i> Mare</span>
             </div>
             <div class="panel-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="news.html" class="btn btn-default">Visualizza</a>
+              <a href="#" class="btn btn-default">Visualizza</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <span><i class="fa fa-fw fa-arrow-circle-up"></i> Itinerari</span>
+              <span><i class="fa fa-fw "></i> Montagna</span>
             </div>
             <div class="panel-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="itinerari.html" class="btn btn-default">Visualizza</a>
+              <a href="#" class="btn btn-default">Visualizza</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <span><i class="fa fa-fw fa-institution"></i> Luoghi</span>
+              <span><i class="fa fa-fw"></i> Laghi</span>
             </div>
             <div class="panel-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="luoghi.html" class="btn btn-default">Visualizza</a>
+              <a href="#" class="btn btn-default">Visualizza</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <span><i class="fa fa-fw fa-bicycle"></i> Attività</span>
+              <span><i class="fa fa-fw"></i> Parchi</span>
             </div>
             <div class="panel-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="attivita.html" class="btn btn-default">Visualizza</a>
+              <a href="#" class="btn btn-default">Visualizza</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <span><i class="fa fa-fw fa-calendar"></i> Eventi</span>
+              <span><i class="fa fa-fw"></i> Terme</span>
             </div>
             <div class="panel-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="eventi.html" class="btn btn-default">Visualizza</a>
+              <a href="#" class="btn btn-default">Visualizza</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <span><i class="fa fa-fw fa-suitcase"></i> Lavoro</span>
+              <span><i class="fa fa-fw"></i> Città d'arte</span>
             </div>
             <div class="panel-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="lavoro.html" class="btn btn-default">Visualizza</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <span><i class="fa fa-fw fa-book"></i> Studio</span>
-            </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="studio.html" class="btn btn-default">Visualizza</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-8">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <span><i class="fa fa-fw fa-image"></i> Media Gallery</span>
-            </div>
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-              <a href="media.html" class="btn btn-default">Visualizza</a>
+              <a href="#" class="btn btn-default">Visualizza</a>
             </div>
           </div>
         </div>
       </div>
       <!-- /.row -->
 
+
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="page-header">Tag cloud</h2>
+          <h2 class="page-header">Tag cloud
+            <small>Luoghi</small>
+          </h2>
         </div>
         <div class="row text-center">
-          <!-- <img src="http://placehold.it/500x300&text=Tag Cloud" alt="Tag cloud" /> -->
+
           <ul id="tagcloud">
             <li data-weight="50"><a href="#">Culturale</a></li>
             <li data-weight="24"><a href="#">Enogastronomico</a></li>
@@ -358,9 +317,51 @@
             <li data-weight="30"><a href="#">Vacanze</a></li>
             <li data-weight="32"><a href="#">Viaggi</a></li>
           </ul>
+
+
         </div>
       </div>
       <!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Attività per la tua vacanza</h2>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <span><i class="fa fa-fw fa-info-circle"></i> Articolo Attività 1</span>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+              <a href="#" class="btn btn-default">Visualizza</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <span><i class="fa fa-fw fa-info-circle"></i> Articolo Attività 2</span>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+              <a href="#" class="btn btn-default">Visualizza</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <span><i class="fa fa-fw fa-info-circle"></i> Articolo Attività 3</span>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+              <a href="#" class="btn btn-default">Visualizza</a>
+            </div>
+          </div>
+        </div>
+      </div>		  
 
 
       <!-- Info -->
@@ -414,7 +415,6 @@
           </div>
         </div>
       </footer>
-
     </div>
     <!-- /.container -->
 
@@ -423,13 +423,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-      $('.carousel').carousel({
-        interval: 5000 //changes the speed
-      })
-    </script>
 
     <script type="text/javascript" src="js/jquery.tx3-tag-cloud.js" ></script>
     <script>
