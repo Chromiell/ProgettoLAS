@@ -1,4 +1,4 @@
-/* Fai collapse la navbar quando non ci sta più in una riga */
+﻿/* Fai collapse la navbar quando non ci sta più in una riga */
 @media (max-width: 1200px) {
   .navbar-header {
     float: none;
@@ -138,4 +138,10 @@ margin-top: 12px;
 }
 
 
+input[type='checkbox'] {
+	margin-right: 10px;
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
 
