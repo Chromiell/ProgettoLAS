@@ -145,3 +145,18 @@ input[type='checkbox'] {
 	cursor: pointer;
 }
 
+.center-to-left {
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+ text-align: center;
+ }
+
+.center-to-right {
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+ text-align: center;
+ }
+
+
